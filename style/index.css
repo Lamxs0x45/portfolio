@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-image: url("images/background.jpg");
+    background-image: url("../images/background.jpg");
     background-size: cover;
     background-position: center;  
     background-repeat: no-repeat;    
@@ -32,7 +32,7 @@ a, p, h2{
 .navcontainer {
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: right;
    height: 100%;
 }
 
@@ -55,6 +55,7 @@ a, p, h2{
   width: 70%;                
   height: 20rem;
   padding: 2rem 1rem;
+  margin-right: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 40px;
 }
@@ -90,7 +91,7 @@ a, p, h2{
     height: 90%;
     gap: 1.5rem;
     width: 90%;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-top: 1rem;
     background-color: rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 40px 0 #0d2626;
