@@ -82,6 +82,7 @@ a, p, h2{
 
 .photo img {
     width: 90%;
+    max-width: 400px;
     border-radius: 40px;
 }
 
