@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    background-color: #0d2626;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a, p, h2, h3, h4, ul, li{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    padding-left: 1rem;
+}
+
+.maincontainer {
+    display: grid;
+    grid-template-columns: 12% auto;
+    min-height: 100vh;
+}
+
+.navcontainer {
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   height: 100%;
+}
+
+.infocontainer {
+    display: grid;
+    grid-template-columns: 30% auto;
+    height: 100%;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;                
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 40px 0 #0d2626;
+  backdrop-filter: blur(8px);
+  width: 70%;                
+  height: 20rem;
+  padding: 2rem 1rem;
+  margin-right: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    margin-top: 1rem;
+    gap: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 40px 0 #0d2626;
+    backdrop-filter: blur(8px);
+    padding: 2rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 40px;
+}
+
+.photo img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    gap: 1.5rem;
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 40px 0 #0d2626;
+    backdrop-filter: blur(8px);
+    padding: 2rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 40px;
+
+}
+
+/* ---- CV page ---- */
+.cvcontainer {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 10%;
+    padding-right: 2rem;
+}
+
+.cvcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cvcard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 40px 0 #0d2626;
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 40px;
+}
+
+.cvcard h2 {
+    font-size: 2rem;
+}
+
+.cvcard h3,
+.projectcard h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.cvsubtitle {
+    opacity: 0.85;
+}
+
+.cventry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cventry h4 {
+    font-size: 1.05rem;
+}
+
+.cvdate {
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.cvlist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    list-style: none;
+}
+
+.cvlist li {
+    padding-left: 0;
+    overflow-wrap: break-word;
+}
+
+.skilltags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.skilltags li {
+    padding: 0.35rem 0.9rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+}
+
+/* ---- Portfolio page ---- */
+.projectgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding-right: 2rem;
+    align-content: start;
+}
+
+.projectcard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 40px 0 #0d2626;
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 40px;
+}
+
+.projectcard h2 {
+    font-size: 1.6rem;
+}
+
+.projectimg {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+}
+
+.projectlinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .maincontainer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        min-height: 100vh;
+    }
+
+    .navcontainer {
+        justify-content: center;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 20px;
+    }
+
+    .infocontainer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .photo {
+        height: auto;
+        margin-top: 0;
+        border-radius: 20px;
+    }
+
+    .photo img {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        border-radius: 20px;
+    }
+
+    .cvcontainer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 0;
+        padding-right: 0;
+    }
+
+    .cvcolumn {
+        gap: 1rem;
+    }
+
+    .cvcard {
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
+    .cvcard h2 {
+        font-size: 1.6rem;
+    }
+
+    .projectgrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 0;
+        padding-right: 0;
+    }
+
+    .projectcard {
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+}
